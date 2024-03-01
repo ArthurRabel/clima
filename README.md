@@ -1,8 +1,29 @@
-# React + Vite
+# Metereologia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Sobre o projeto
 
-Currently, two official plugins are available:
+<code>https://arthurrabel.github.io/metereologia/</code>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Pesquise o tempo de qualquer lugar.
+ Projeto feito para treinar REACT e consumo de API.
+
+## Layout
+![jogo da velha imagem](https://github.com/ArthurRabel/metereologia/blob/main/public/readme/Print.png)
+
+# Tecnologias utilizadas
+- HTML
+- CSS
+- JS
+- REACT
+- Vite
+- styled-components
+
+  # API utilizadas
+- Geocoding API <code>https://openweathermap.org/api/geocoding-api</code>
+- Current weather data <code>https://openweathermap.org/current</code>
+  
+## Implantação em produção
+- Front end web: Github Pages
+
+# Authors
+© Arthur Rabelo
