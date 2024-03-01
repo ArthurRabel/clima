@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Search from './Components/search/index'
 import Previsoes from './Components/prevision';
 import { StyledDiv } from './App';
+import dotenv from 'dotenv';
 
 function App() {
   const [previsao, setPrevisao] = useState(<div></div>);

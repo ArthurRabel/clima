@@ -1,10 +1,10 @@
-import { getPrevision } from './getPrevision';
+import { getPrevision } from './getPrevision'
 
 export function getCity(cityName) {
 
     // Dados da url pro get da cidade
-    let APIkey = "a737f6882e751dc5f68786d7b44ffd25";
-    let URL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=3&appid=' + APIkey;
+    const apiKey = import.meta.env.VITE_APP_API_KEY;
+    let URL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=3&appid=' + apiKey;
     console.log("URL da requisição do estado:", URL); // url do estado
 
     return fetch(URL)
