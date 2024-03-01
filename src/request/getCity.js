@@ -8,13 +8,13 @@ export function getCity(cityName) {
     console.log("URL da requisição do estado:", URL); // url do estado
 
     return fetch(URL)
-        // Obtém os dados da resposta como xml
+        // Obtém os dados da resposta como json
         .then(response => {
             if (!response.ok) {
                 throw new Error('Erro ao consumir a API. Código de status:', response.status);
             }
 
-            return response.text(); // Retorna os dados como string xml
+            return response.text(); // Retorna os dados como string json
         })
         .then(data => {
             //json string para json objeto
