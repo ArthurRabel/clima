@@ -4,8 +4,7 @@ export function getCity(cityName) {
 
     // Dados da url pro get da cidade
     const apiKey = import.meta.env.VITE_APP_API_KEY;
-    let URL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=3&appid=' + apiKey;
-    console.log("URL da requisição do estado:", URL); // url do estado
+    let URL = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityName + '&limit=3&appid=' + apiKey;
 
     return fetch(URL)
         // Obtém os dados da resposta como json

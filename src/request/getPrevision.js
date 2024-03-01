@@ -3,8 +3,6 @@ export function getPrevision(lat, lon, name) {
     // Dados da url pro get da previsão
     const apiKey = import.meta.env.VITE_APP_API_KEY;
     let URL = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat.toString() + '&lon=' + lon.toString() + "&appid=" + apiKey;
-    console.log("URL da requisição da previsao:", URL); // url da previsao
-
 
     return fetch(URL)
         // Obtém os dados da resposta como json
