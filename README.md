@@ -2,7 +2,7 @@
 
 # Sobre o projeto
 
-<code>https://arthurrabel.github.io/metereologia/</code>
+<code>clima-rabelo.vercel.app</code>
 
  Pesquise o tempo de qualquer lugar.
  Projeto feito para treinar REACT e consumo de API.
