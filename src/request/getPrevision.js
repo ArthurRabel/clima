@@ -13,11 +13,7 @@ export function getPrevision(lat, lon, name) {
             return response.text(); // Retorna os dados como string json
         })
         .then(prevision => {
-            //cria array pra retorna ambos valores
-            //Json.parse para converter de string json para objeto json
-            const arrayReturn = [JSON.parse(prevision), name]
-            return arrayReturn; // Retorna os dados da previsao e o nome do local
-
+            return [JSON.parse(prevision), name]; // Retorna os dados da previsao e o nome do local
         })
         .catch(error => {
             console.error('Erro os dados da previsão no getPrevisao:', error); // Adicionando um log para o erro na função getCity

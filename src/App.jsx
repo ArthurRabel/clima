@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Search from './Components/search/index'
 import Previsoes from './Components/prevision';
-import { StyledDiv } from './App';
-import dotenv from 'dotenv';
+import { HeaderStyled } from './App';
 
-function App() {
+export default function App() {
   const [previsao, setPrevisao] = useState(<div></div>);
 
   // Pega os dados do componen Search e envia pro Prevision
@@ -14,20 +13,18 @@ function App() {
     if (value !== undefined) {
       setPrevisao(<Previsoes cidade={value[0]} nome={value[1]}/>);
     }
-
+    return value;
   };
 
   return (
     <> 
-      <StyledDiv>
+      <HeaderStyled>
         {/* Ao pesquisar envia os dados para componente prevision */}
         <Search onValueChange={handleValueChange}/>
-        {/* Componente prevision so vai ser renderizado quando os dados forem pegos */}
-        {previsao}
-      </StyledDiv>
+      </HeaderStyled>
+      
+      {/* Componente prevision so vai ser renderizado quando os dados forem pegos */}
+      {previsao}
     </>
   )
 }
-
-export default App
-

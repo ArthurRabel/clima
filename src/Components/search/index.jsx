@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { Styledinput, Styledbutton } from './style.js';
+import { useRef } from 'react';
+import { WrapperSearch } from './style.js';
 import { getCity } from '../../request/getCity.js';
 
 export default function Search({ onValueChange  }) {
@@ -23,9 +23,8 @@ export default function Search({ onValueChange  }) {
   };
   
   return (
-    <div> 
-      <Styledinput type='search' placeholder="Digite sua busca..." ref={pesquisaValor}/>
-      <Styledbutton onClick={handleSearch}>Pesquisar</Styledbutton>
-    </div>
+    <WrapperSearch> 
+      <input type='search' placeholder="Digite sua busca..." ref={pesquisaValor}/>
+      <button onClick={handleSearch}>Pesquisar</button>
+    </WrapperSearch>
 )}
-
