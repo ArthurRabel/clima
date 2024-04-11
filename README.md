@@ -2,7 +2,7 @@
 
 # Sobre o projeto
 
-<code>clima-rabelo.vercel.app</code>
+<code>https://clima-rabelo.vercel.app</code>
 
  Pesquise o tempo de qualquer lugar.
  Projeto feito para treinar REACT e consumo de API.
